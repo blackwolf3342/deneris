@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>deneris</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+	<div class="modal-content">
+		<span id="close">X</span>
+		<div class="modal-header">
+			<h2>Zboží bylo přidáno do košíku</h2>
+		</div>
+
+		<div class="modal-body">
+			<img src="images/product-mini.png" alt="">
+
+			<div class="name-product">
+				<p><span>Dámska zimní oboustranná bunda s kapucou</span></p>
+				<p>W-707 khaki-béžová</p>
+				<p>Cena <span class="price">1 584 Kč</span></p>
+			</div>
+
+			<p class="you-have">Zatím máte v košíku 4 věci za cenu: <span>5 458 Kč</span></p>
+
+			<div class="nav-link">
+				<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i>Pokračovat v nákupu</a>
+				<span>nebo</span>
+				<a href="#">Přejít do košíku <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+			</div>
+			
+			<div class="info-block">
+				<img src="images/info-block-img.png" alt="">
+				<p>Nakupte ještě 3 věci a <span>nejlevnější máte ZDARMA!</span></p>
+			</div>			
+		</div>
+	</div>
+
+    <div id="popup" class="modal">
+	</div>
+
+<div class="header">
+
+   		<div class="wrapper">
+   				
+   				<div class="top-header">
+   					
+   						<div class="container">
+   							<div class="row">
+   								
+   								<ul>
+   										<li>Zavolej nám <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> +420 606 723 678</a></li>
+   										<li class="clock"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>Po-Pá 9-18</span></li>
+   										<li class="box"><img src="images/cardboard-box.png" alt=""> Vše máme skladem!</li>
+   										<li class="truck"><i class="fa fa-truck" aria-hidden="true"></i> Doprava nad 1500 Kč ZDRAMA! </li>
+   										<li class="calendar"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 14 DNÍ na vrácení zboží!</li>
+   									</ul>	
+   							</div>
+   						</div>
+   				</div>
+
+   				<div class="middle-header">
+   					
+   					<div class="container">
+
+   						<div class="row">
+   							
+   							<div class="logo">
+		   						<a href="#">
+		   							<img src="images/icon.png" alt="">
+		   						</a>
+
+		   					</div>	
+
+		   					<form action="" class="search-box">
+
+		   						<input type="text" class="search-box_input" placeholder="Hledaný výraz...">
+
+		   						<button type="submit" class="search-box_submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		   					</form>
+
+		   					<a href="#" class=" login"><i class="fa fa-user" aria-hidden="true"></i> Přihásit</a>
+
+		   					<a href="#" class=" reg"><i class="fa fa-lock" aria-hidden="true"></i> Registrace</a>
+
+		   					<a href="#" class=" shop-cart" > <i class="fa fa-shopping-cart" data-number="1" aria-hidden="true"></i> 0 KČ</a>
+
+   						</div>
+   					</div>
+   				</div>
+
+   				<div class="header-nav">
+					
+						<div class="container">
+							<div class="row">
+							
+							<button class="colapse" id="open">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+		   					<p class="navbar-text"><span>Eshop pouze po ženy!</span> I ženy mají své dny :)</p>
+
+		   					<ul class="navbar-list">
+
+		   						<li class="navbar-list_item"><a href="#"><img src="images/home-icon.png" alt="">Domů</a></li>
+
+		   						<li class="navbar-list_item"><a href="#"><img src="images/leggings-icon.png" alt="">Legíny</a></li>
+
+		   						<li class="navbar-list_item"><a href="#"><img src="images/tights-icon.png" alt="">Kalhoty</a></li>
+
+		   						<li class="navbar-list_item"><a href="#"><img src="images/dress-icon.png" alt="">Šaty</a></li>
+		   						
+		   						<li class="navbar-list_item"><a href="#"><img src="images/overalls-icon.png" alt="">Overaly</a></li>
+		   					</ul>
+							</div>
+
+						</div>
+
+   				</div>
+
+   		</div>
+   	</div>
+
+   	<main>	
+		<div class="checkout ">
+			<div class="container">
+				<div class="row">
+					<div class="page-address">
+
+						<ul>
+							<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+							<li><a href="#">Dámské oblečení</a></li>
+							<li><a href="#">Výprodej dámskeho oblečení</a></li>
+							<li>Dámské legíny</li>
+						</ul>
+					</div>
+					
+					<div class="col-md-9 col-sm-12 .col-xs-12 col-md-push-3 content">
+						<h1>Nákupní košík</h1>
+
+						<form action="" class="cart">
+							
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<td class="product-img">Produkt</td>
+											<td class="product-description">Popis</td>
+											<td class="product-quantity">Množství</td>
+											<td class="price">Cena/ks</td>
+											<td class="price-all">Celkem</td>
+											<td></td>
+										</tr>
+									</thead>
+									<tbody>
+										
+										<tr>
+											<td data-label="Produkt"><img src="images/product-mini.png" alt=""> </td>
+											<td data-label="Popis">
+												<div class="name-item">
+													<h4>Dámska zimní oboustranná bunda s kapucou</h4>
+												<p>W-707 khaki-béžová</p>
+												</div>
+												
+											</td>
+											<td data-label="Množství">
+												<div class="spinner"> 
+													<input type="text" value="0 ks" name="value" id="spinner">
+												</div>
+											</td>
+											<td data-label="Cena/ks">
+												<p class="price_one">1 899 Kč</p>
+											</td>
+											<td data-label="Celkem">
+												<p><span>1 899 Kč</span></p>
+											</td>
+											<td data-label="Odstranit"><button class="delete_item">X</button></td>
+										</tr>
+										<tr class="total">
+											<td colspan="3" class="space"></td>
+											<td>
+												<p>Cena zboží s DPH:</p>
+												<p>Doprava a platba s DPH:</p>
+												<p><span>Celkem s DPH:</span></p>
+											</td>
+											<td>
+												<p><span>1 899 Kč</span></p>
+												<p><span>95 Kč</span></p>
+												<p><span>1 994 Kč</span></p>
+											</td>
+											<td colspan="1" class="space"></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+
+							<div class="purchase">
+								<div> 
+									<i class="fa fa-truck" aria-hidden="true"></i>
+									<span>
+										Nakup ješte za 458 Kč a máš dopravu zdarma!
+									</span>
+								</div>
+
+								<div >
+									<i class="fa fa-smile-o" aria-hidden="true"></i>
+									<span>Nakup ješte 2 produkty a nejlevnější máš ZDARMA!
+									</span>
+								</div>
+							</div>
+
+							<div class="info">
+								<div class="col-6">
+									<h3>Adresa a kontaktní údaje</h3>
+
+									<div class="info_block">
+										<p>Jste u nás již zaregistrován?</p>
+										<div>
+											<i class="fa fa-user" aria-hidden="true"></i>
+										<a href="#">Přihlásit se</a>
+										</div>
+									</div>
+
+									<div class="inputs">
+										<label for="">Jméno:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">Příjmění:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">Ulice:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">Město:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">PSČ:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">E-mail:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">Telefon:</label>
+										<input type="text">
+									</div>
+
+									<div class="inputs">
+										<label for="">Země:</label>
+										<div class="select-wrapper">
+											<select name="country" id="">
+												<option value="">
+													Česká republika
+												</option>
+												<option value="">
+													Česká republika
+												</option>
+												<option value="">
+													Česká republika
+												</option>
+											</select>
+										</div>
+									</div>
+									
+									<a href="" class="change">Zboží doručit na jinou adresu</a>
+								</div>
+								<div class="col-6">
+									<h3>Možnosti dopravy</h3>
+									
+									<div class="traffic">
+										<label for="t1">
+											<input type="radio" name="traffic" id="t1" checked>
+											<span>
+												<div>
+													<i class="fa fa-check-square-o" aria-hidden="true"></i>Česká pošta - balík do ruky
+												</div>
+
+												<span class="price">95 Kč</span>
+											</span>
+										</label>
+
+										<label for="t2">
+											<input type="radio" name="traffic" id="t2">
+											<span>
+												<div>
+													<i class="fa fa-check-square-o" aria-hidden="true"></i>Česká pošta - balík na poštu
+												</div>
+
+												<span class="price">85 Kč</span>
+											</span>
+										</label>
+									</div>
+
+									<h3>Způsob platby</h3>
+
+									<div class="payment">
+										<label for="pay1">
+											<input type="radio" name="payment" id="pay1" checked>
+											<span>
+												<div>
+													<i class="fa fa-check-square-o" aria-hidden="true"></i>Dobírka
+												</div>
+
+												<span class="price">30 Kč</span>
+											</span>
+										</label>
+
+										<label for="pay2">
+											<input type="radio" name="payment" id="pay2">
+											<span>
+												<div>
+													<i class="fa fa-check-square-o" aria-hidden="true"></i>Platba předem
+												</div>
+
+												<span class="price">Zdarma</span>
+											</span>
+										</label>
+									</div>
+
+									<h3>Poznámka</h3>
+
+									<textarea name="area" id="area"></textarea>
+								</div>
+							</div>
+
+							<div class="submit">
+								
+								<div class="submit-block">
+									
+									<p>Objednávka celkem: <span>2 365 Kč</span></p>
+								
+									<button type="submit"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Dokončit objednávku</button>
+								</div>		
+							</div>
+						</form>
+						
+					</div>
+
+					<div class="col-md-3 col-sm-12 .col-xs-12 col-md-pull-9 sidebar">
+						<div class="category">
+							
+							<div id="accordion">
+								<p><img src="images/sidebar-1.svg" alt=""> Legíny</p>
+								<div>
+									<ul>
+										<li><a href="#">Výprodej legín</a></li>
+										<li><a href="#">Sportovní legíny</a></li>
+										<li><a href="#">Elegentní legíny</a></li>
+										<li><a href="#">Zimní zateplené legíny</a></li>
+									</ul>
+								</div>
+								<p><img src="images/sidebar-2.svg">Kalhoty</p>
+								<div>
+									<ul>
+										<li><a href="#">Výprodej legín</a></li>
+										<li><a href="#">Sportovní legíny</a></li>
+										<li><a href="#">Elegentní legíny</a></li>
+										<li><a href="#">Zimní zateplené legíny</a></li>
+									</ul>
+								</div>
+								<p><img src="images/sidebar-3.svg"> Šaty</p>
+								<div>
+									<ul>
+										<li><a href="#">Výprodej legín</a></li>
+										<li><a href="#">Sportovní legíny</a></li>
+										<li><a href="#">Elegentní legíny</a></li>
+										<li><a href="#">Zimní zateplené legíny</a></li>
+									</ul>
+								</div>
+								<p> <img src="images/sidebar-4.svg">Overaly</p>
+								<div>
+									<ul>
+										<li><a href="#">Výprodej legín</a></li>
+										<li><a href="#">Sportovní legíny</a></li>
+										<li><a href="#">Elegentní legíny</a></li>
+										<li><a href="#">Zimní zateplené legíny</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="social">
+								<p>Facebook</p>
+								<div class="wrapper">
+									<div class="widget-facebook">
+									  <iframe id="facebook_iframe" class="facebook_iframe"></iframe>
+									</div>
+								</div>
+								<p>Instagram</p>
+								<div class="wrapper instagram">
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<div class="img-wrapper"><img src="images/instagram-img.jpg" alt="" class="img-responsive">
+										</div>
+
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<div class="img-wrapper"><img src="images/instagram-img.jpg" alt="" class="img-responsive">
+										</div>
+
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<div class="img-wrapper"><img src="images/instagram-img.jpg" alt="" class="img-responsive">
+										</div>
+
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<div class="img-wrapper"><img src="images/instagram-img.jpg" alt="" class="img-responsive">
+										</div>
+
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<div class="img-wrapper"><img src="images/instagram-img.jpg" alt="" class="img-responsive">
+										</div>
+
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<div class="img-wrapper"><img src="images/instagram-img.jpg" alt="" class="img-responsive">
+										</div>
+
+									</div>
+								</div>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+   	</main>
+
+   <footer>
+   		
+   		<div class="main">
+   			<div class="container">
+   				<div class="row">
+   					<div class="col-md-3 col-sm-6 col-xs-6">
+   						<p><i class="fa fa-address-book" aria-hidden="true"></i>Kontakt</p>
+
+   						<ul>
+   							<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@deneris.cz</a></li>
+   							<li><a href="#"><i class="fa fa-mobile" aria-hidden="true" ></i>+420 606 723 608</a></li>
+   						</ul>
+   						
+   						<div class="social-link">
+   							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+   							<a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+   						</div>
+   					</div>
+   					<div class="col-md-3 col-sm-6 col-xs-6">
+   						<p><i class="fa fa-info-circle" aria-hidden="true"></i>Můj účet</p>
+
+   						<ul>
+   							<li><a href="#">Informáce o doručení</a></li>
+   							<li><a href="#">Ochrana osobních údajů</a></li>
+   							<li><a href="#">Všeobecní obchodní podmínky</a></li>
+   							<li><a href="#">Vrácení zboží do 14 dnů</a></li>
+   						</ul>
+   					</div>
+   					<div class="col-md-3 col-sm-6 col-xs-6">
+   						<p><i class="fa fa-user-circle" aria-hidden="true"></i>Informace</p>
+
+   						<ul>
+   							<li><a href="#">Přihlásit se</a></li>
+   							<li><a href="#">Registrace účtu</a></li>
+   							<li><a href="#">Odběr novinek</a></li>
+   						</ul>
+   					</div>
+   					<div class="col-md-3 col-sm-6 col-xs-6">
+   						<p><i class="fa fa-home" aria-hidden="true"></i>Informace</p>
+
+   						<ul>
+   							<li><a href="#">O nás</a></li>
+   							<li><a href="#">Kontakt</a></li>
+   							<li><a href="#">Velkoobchod</a></li>
+   						</ul>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+
+   		<div class="basement">
+   			
+   			<div class="container">
+   				<div class="row">
+   					
+		   			<p>© Deneris.cz   <span>|</span>   Všechna práva vyhrazena</p>
+		   			<p>Powered by <a href="#">Deneris.cz</a></p>
+   				</div>
+   			</div>
+
+   		</div>
+
+   	</footer>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
